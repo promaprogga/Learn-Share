@@ -1,0 +1,47 @@
+body {
+    background-color: #4bbed3;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+}
+img {
+    height: 300px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: red;
+}
+.header-menu a {
+    font-size: 16px;
+    margin: 0 5px;
+}
+.book-down-one {
+    margin-top: 100px;
+}
+.book-down-tow {
+    margin-top: 200px;
+}
+.book-down-three {
+    margin-top: 300px;
+}
+.logoo {
+    width: 133px;
+    height: 76px;
+}
+.book-container {
+    margin-top: -80px;
+}
+
+@media only screen and (max-width: 600px) {
+    .book-down-one {
+        margin-top: 5px;
+    }
+    .book-down-tow {
+        margin-top: 5px;
+    }
+    .book-down-three {
+        margin-top: 5px;
+    }
+}

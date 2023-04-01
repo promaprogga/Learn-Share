@@ -1,0 +1,285 @@
+/*
+====================================================================================================================================================================
+                                                    Start Slideshow Properties
+====================================================================================================================================================================
+*/
+
+.home{
+    padding:0;
+}
+
+.home .home-slider .box{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+.home .home-slider .box .content{
+    text-align: center;
+}
+.home .home-slider .box .content h1{
+    font-size: 5rem;
+    color:rgb(255, 255, 255);
+    transition-delay: .2s;
+}
+.home .home-slider .box .content h3{
+    font-size: 3rem;
+    color:rgb(235, 235, 235);
+    transition-delay: .2s;
+}
+
+.home .home-slider .box .content p{
+    font-size: 2rem;
+    color:rgb(197, 197, 197);
+    transition-delay: .4s;
+    padding:1rem 0;
+}
+
+.home .home-slider .box .content .button{
+    transition-delay: .6s;
+}
+
+.home .home-slider .box .content > *{
+    transform: translateY(2rem);
+    opacity: 0;
+}
+
+.home .home-slider .swiper-slide-active .content > *{
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+.home .home-slider .swiper-button-next{
+    right: 4rem;
+    color:#fff;
+    opacity: 0;
+}
+
+.home .home-slider .swiper-button-prev{
+    left: 4rem;
+    color:#fff;
+    opacity: 0;
+}
+
+.home .home-slider .swiper-button-next:hover,
+.home .home-slider .swiper-button-prev:hover{
+    color:var(--main-color);
+}
+
+.home .home-slider:hover .swiper-button-next,
+.home .home-slider:hover .swiper-button-prev{
+    opacity: 1;
+}
+
+/*
+====================================================================================================================================================================
+                                                    End Slideshow Properties
+====================================================================================================================================================================
+*/
+
+
+/*
+====================================================================================================================================================================
+                                                    Start Featured Courses Properties
+====================================================================================================================================================================
+*/
+
+.courses{
+    background:rgb(0, 0, 0);
+}
+.courses .heading {
+    color:rgb(224, 88, 9);
+}
+.courses .heading span{
+    color:rgb(255, 255, 255);
+}
+
+.courses .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.courses .box-container .box{
+    flex:1 1 30rem;
+    height:40rem;
+    overflow: hidden;
+    position: relative;
+    margin:2rem;
+    height:100%;
+    width:100%;
+    box-shadow: 0 .3rem .5rem #000;
+}
+
+.courses .box-container .box img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.courses .box-container .box .info{
+    padding:2rem;
+    width:100%;
+    position: absolute;
+    bottom:-100%; left:0;
+    background:rgba(0, 0, 0, 0.7);
+}
+
+.courses .box-container .box:hover .info{
+    bottom:0;
+    color:rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+.courses .box-container .box .info h2{
+    font-size: 3rem;
+    color:rgb(245, 109, 30);
+    padding-bottom: .5rem;
+}
+
+/*
+====================================================================================================================================================================
+                                                    End Featured Courses Properties
+====================================================================================================================================================================
+*/
+
+/*
+====================================================================================================================================================================
+                                                    Start About Section Properties
+====================================================================================================================================================================
+*/
+.about{
+    background-color: black;
+}
+.about .box-container {
+    margin-top: 3rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(16rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+    gap: 2rem;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  
+  .about .box-container .box {
+    text-align: center;
+    background: rgb(84 82 80);
+    padding: 3rem 2rem;
+  }
+  
+  .about .box-container .box h3 {
+    font-size: 4rem;
+    color:black;
+    text-transform: capitalize;
+  }
+  
+  .about .box-container .box p {
+    font-size: 3rem;
+    color: rgb(255, 98, 0);
+    line-height: 2;
+    padding-top: .5rem;
+  }
+/*
+====================================================================================================================================================================
+                                                    End About Section Properties
+====================================================================================================================================================================
+*/
+
+/*
+====================================================================================================================================================================
+                                                    Start Learn Tech Section Properties
+====================================================================================================================================================================
+*/
+.learntech {
+    background: rgb(0, 0, 0);;
+  }
+  
+  .learntech .slide {
+    text-align: center;
+  }
+  
+  .learntech .slide:hover .image img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  
+  .learntech .slide .image {
+    height: 25rem;
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: -3rem;
+  }
+  
+  .learntech .slide .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+  
+  .learntech .slide .content {
+    padding: 2rem;
+    padding-top: 5rem;
+    background: white;
+    -webkit-box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.2);
+  }
+  
+  .learntech .slide .content h3 {
+    font-size: 2rem;
+    color: black;
+    text-transform: capitalize;
+  }
+  
+  .learntech .slide .content p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #666;;
+    line-height: 2;
+  }
+
+/*
+====================================================================================================================================================================
+                                                    End Learn Tech Section Properties
+====================================================================================================================================================================
+*/
+
+/*
+====================================================================================================================================================================
+                                                    Start Footer
+====================================================================================================================================================================
+*/
+.footer {
+    text-align: center;
+    background-color: black;
+  }
+  
+  .footer .credit {
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  
+  .footer .credit span {
+    color: orange;
+  }
+  
+ 
+/*
+====================================================================================================================================================================
+                                                    End Footer
+====================================================================================================================================================================
+*/

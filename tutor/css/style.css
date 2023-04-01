@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+.carousel-item img {
+  height: 500px;
+}
+.paragraph {
+  padding: 50px 0px;
+}
+.paragraph h1 {
+  text-align: center;
+}
+.footer-part {
+  background: #000;
+}
+.form_bg {
+  background: url("../images/bg2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar-brand {
+  color: #F6BE00 !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+
+/* profile */
